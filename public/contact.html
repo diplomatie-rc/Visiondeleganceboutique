@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <title>VEB</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/CursusZ.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/CursusZ-Font.css">
+    <link rel="stylesheet" href="assets/css/CursusZ-Shop.css">
+    <link rel="stylesheet" href="assets/css/CursusZ-Carousel.css">
+    <link rel="stylesheet" href="assets/css/CursusZ-light.css">
+</head>
+
+<body>
+   
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">ACCUEIL</a></li>
+                        
+                            <li><a href="A propros.html">À PROPROS</a></li>
+
+                            <li class="submenu">
+                                <a href="javascript:;">FEMME</a>
+                                <ul>
+                                    <li><a href="FEMME/Vetements/Page1.html">Vêtements</a></li>
+                                    <li><a href="FEMME/Accessoires/Page1s.html">Accessoires</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="scroll-to-section"><a href="#top" class="active">CONTACT</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="page-heading cover-page-heading" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="inner-content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+
+    <!-- Contact Area -->
+    <div class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div id="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.056435029919!2d-71.87976302406538!3d45.4082015371738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb7b3aa03790edf%3A0x75b9f88c0bcad1ed!2s525%20Rue%20King%20E%2C%20Sherbrooke%2C%20QC%20J1G%201B6%2C%20Canada!5e0!3m2!1sen!2scg!4v1734369099605!5m2!1sen!2scg"
+                            width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Contactez-nous</h2>
+                        <span></span>
+                    </div>
+                    <form id="contact" action="/send-email" method="POST">
+                        <p id="image-info"></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <input name="name" type="text" id="name" placeholder="Nom" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <input name="email" type="text" id="email" placeholder="Email ou Whatsapp" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" id="message" placeholder="Message"
+                                        required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <input type="hidden" name="image" id="image">
+                                    <button type="submit" id="form-submit" class="main-dark-button"><i
+                                            class="fa fa-paper-plane"></i></button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                    <script>
+                        // Obtenez l'image passée via l'URL
+                        const params = new URLSearchParams(window.location.search);
+                        const image = params.get('image');
+                        if (image) {
+                            document.getElementById('image-info').textContent = 'Merci pour votre intérêt ! Nous sommes ravis que cette photo de notre catalogue ait attiré votre attention: ' + image;
+                            document.getElementById('image').value = image;
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Area Ends -->
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img src="assets/images/white-logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Adresse-->
+                <div class="col-lg-3">
+                    <ul>
+                        <li><a href="#">525 Rue King Est, Sherbrooke, QC, Canada, Quebec</a></li>
+                    </ul>
+                </div>
+                <!--Contact-->
+                <div class="col-lg-3">
+                    <ul>
+                        <li><a href="#">+1 819-588-5957</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <ul>
+                            <li><a href="https://www.facebook.com/profile.php?id=61562633141009"><i
+                                        class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/vision.d.elegance.shop/"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li><a href="mailto:Visiondelegance@gmail.com"><i class="fa fa-envelope"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

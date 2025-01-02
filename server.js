@@ -39,7 +39,7 @@ app.post('/send-email', (req, res) => {
     // Créer les options de l'email
     const mailOptions = {
         from: email,  // L'email de l'utilisateur
-        to: 'rolphlouya28@gmail.com',  // L'email où vous voulez recevoir le message
+        to: 'visiondelegance@gmail.com',  // L'email où vous voulez recevoir le message
         subject: `Message de ${name}`,  // Objet de l'email
         text: `Email: ${email}\n\nMessage: ${message}`,  // Corps du message en texte brut
         attachments: image ? [
